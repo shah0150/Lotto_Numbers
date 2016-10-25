@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ajax Lotto</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="home" class="page active">
+        <header>
+            <h1>Lotto Numbers</h1>
+        </header>
+        <section class="main">
+            <p class="formBox">
+                <label for="digits">Number of Digits</label>
+                <input id="digits" type="number" max="10" min="1" placeholder="6" class="sm" />
+            </p>
+            <p class="formBox">
+                <label for="max">Range</label>
+
+                <span>1 to <input id="max" type="number" min="2" max="99" placeholder="49" class="sm" /></span>
+            </p>
+            <p class="formBox buttons">
+                <button id="btnSend">Generate Numbers</button>
+            </p>
+        </section>
+    </div>
+    <div id="list" class="page">
+        <header>
+            <h1>Lotto Numbers</h1>
+        </header>
+        <section class="main">
+            <ul class="num_list">
+                <!-- display the generated numbers from the server -->
+            </ul>
+            <p>
+                <button id="btnBack">Start Again</button>
+            </p>
+        </section>
+    </div>
+    <div id="infoBox">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

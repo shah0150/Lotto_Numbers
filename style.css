@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:16px;
+    line-height: 1.6;
+    font-family: Helvetica, Calibri, Roboto, sans-serif;
+}
+label, input{
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+}
+p.formBox{
+    padding: 1rem;
+    text-align: center;
+}
+.page{
+    display:none;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.active{
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+.num_list{
+    margin: 40px auto;
+    width: 500px;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #0044cc;
+}
+.num_list li {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    margin: 10px auto;
+}
+li{
+    list-style: none;
+    font-size: 3rem;
+    padding: 0.5rem;
+    line-height: 1;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+button {
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+}
+header {
+    text-align: center;
+}
+#infoBox {
+    display: block;
+    margin-left: 50px;
+}
+#infoBox.error {
+    color: red;
+}
+.duplicate {
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(204,30,30,1);
+    -moz-box-shadow: 0px 0px 40px 0px rgba(204,30,30,1);
+    box-shadow: 0px 0px 40px 0px rgba(204,30,30,1);
+}
+.jackpot {
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(217,160,17,1);
+    -moz-box-shadow: 0px 0px 40px 0px rgba(217,160,17,1);
+    box-shadow: 0px 0px 40px 0px rgba(217,160,17,1);
+}
+
+.busy {
+    display: none;
+}
+
+@media screen and (max-width: 555px) {
+    .num_list {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    label {
+        display: block;
+    }
+    .active {
+        width: auto;
+    }
+    li {
+        height: 4rem;
+    }
+    html {
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 480px) {
+    li {
+        height: 1em;
+    }
+    #home {
+        font-size: 1.1rem;
+    }
+    #list {
+        font-size: 1rem;
+    }
+}
